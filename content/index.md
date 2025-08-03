@@ -1,6 +1,7 @@
 # My First Page
 
-:FormB
+::form-b
+::
 
 Here is some content.
 
