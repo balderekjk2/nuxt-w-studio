@@ -12,4 +12,13 @@ export default defineNuxtConfig({
       },
     },
   },
+  hooks: {
+    'components:extend': (components) => {
+      const globals = components.filter((c) =>
+        ['UButton', 'UIcon'].includes(c.pascalName)
+      );
+
+      globals.forEach((c) => (c.global = true));
+    },
+  },
 });
